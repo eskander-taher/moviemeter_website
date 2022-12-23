@@ -1,0 +1,160 @@
+#root{
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+    background-color: #121212;
+    color: #F5F5DC;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* sign up/in pages */
+.sign-comp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.sign-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign-form input{
+    width: 100%;
+    height: 1.5rem;
+    margin-bottom: .5rem;
+    border-radius: 5px;
+    padding: .25rem;
+}
+.sign-btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* Header */
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #121212;
+    border-bottom: 2px solid #F5F5DC ;
+    padding-bottom: 1rem;
+    padding-top: .5rem;
+}
+.header a{
+    color: #F5F5DC;
+    text-decoration: none;
+    border: 1px solid #F5F5DC;
+    border-radius: .5em;
+    padding: .5em;
+}
+.signs{
+    display: flex;
+    gap: .5rem;
+}
+.signs li{
+    list-style-type: none;
+}
+
+/* movies section */
+.movies-section{
+    width: 100%;
+}
+.movie{
+    width: 200px;
+    height: 300px;
+    padding: 1em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #F5F5DC;
+    border-radius: 1rem;
+    transition: all .2s ease-in-out;
+}
+.movie:hover{
+    transform: scale(1.1) rotate(-5deg);
+}
+.movie p{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: .25rem;
+    font-size: 1.5rem;
+}
+.movies{
+    height: 70vh;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-content: flex-start;
+    gap: .5rem;
+}
+
+/* filters */
+.filters-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    border-bottom: 2px solid #F5F5DC ;
+}
+.filters-section select, input{
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+/* featured-movie */
+.featured-movie{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5rem;
+    justify-content: center;
+    margin: .5rem;
+}
+.featured-movie p{
+    margin-bottom: .5rem;
+}
+.featured-movie h2{
+    margin-bottom: .5rem;
+}
+.featured-movie hr{
+    margin-bottom: .5rem;
+}
+.movie-details{
+    display: flex;
+    gap: 1rem;
+}
+.movie-details img{
+    width: 30%;
+    margin-bottom: 1rem;
+}
+.comments-section input{
+    width: 100%;
+    margin-bottom: .5rem;
+}
+.comments-section button{
+    width: 100%;
+    height: 2rem;
+    margin-bottom: .5rem;
+}
+.comment{
+    border: 1px solid #F5F5DC ;
+    margin-bottom: .5rem;
+    padding: .5rem;
+    border-radius: 1rem;
+}
